@@ -38,6 +38,12 @@ public class DoctorController {
         return ResponseEntity.ok(doctors);
     }
 
+    // 2.5 Get all Doctors
+    @GetMapping
+    public ResponseEntity<List<Doctor>> getAllDoctors() {
+        return ResponseEntity.ok(doctorService.getAllDoctors());
+    }
+
     // 3. Add a new Consultation Time Slot
     @PostMapping("/{id}/slots")
     public ResponseEntity<DoctorSlot> addDoctorSlot(

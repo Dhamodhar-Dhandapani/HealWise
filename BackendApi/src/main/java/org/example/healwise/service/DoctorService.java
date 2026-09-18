@@ -27,7 +27,6 @@ public class DoctorService {
     @Autowired
     private HospitalRepository hospitalRepository;
 
-
     public Doctor registerDoctor(DoctorRequestDTO dto) {
         Hospital hospital = hospitalRepository.findById(dto.getHospitalId())
                 .orElseThrow(() -> new RuntimeException("Hospital not found"));
@@ -42,9 +41,12 @@ public class DoctorService {
         return doctorRepository.save(doctor);
     }
 
-
     public List<Doctor> getDoctorsByHospital(Long hospitalId) {
         return doctorRepository.findByHospitalId(hospitalId);
+    }
+
+    public List<Doctor> getAllDoctors() {
+        return doctorRepository.findAll();
     }
 
     @Transactional
@@ -79,6 +81,5 @@ public class DoctorService {
     public List<DoctorSlot> getAvailableSlots(Long doctorId, LocalDate date) {
         return doctorSlotRepository.findByDoctorIdAndDateAndIsBookedFalse(doctorId, date);
     }
-
 
 }
