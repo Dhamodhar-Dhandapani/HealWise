@@ -1,0 +1,5 @@
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+Maven home: C:\Users\dhamo\.m2\wrapper\dists\apache-maven-3.9.16\0daed3be3ebd1c706f0e69e8b07c6b73f5cc4ea3dfce72a8d0ec2e849ca2ddb0
+Java version: 11.0.2, vendor: Oracle Corporation, runtime: C:\Users\dhamo\AppData\Local\jdk-11.0.2
+Default locale: en_IN, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
