@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #4f46e5;
-  --primary-hover: #4338ca;
-  --bg-color: #f8fafc;
+  --primary-color: #0284c7;
+  --primary-hover: #0369a1;
+  --bg-color: #f0f9ff;
   --text-main: #0f172a;
   --text-muted: #64748b;
   --card-bg: #ffffff;
@@ -127,11 +127,25 @@ nav button.active {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }
