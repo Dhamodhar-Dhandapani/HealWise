@@ -1,0 +1,95 @@
+Property settings:
+    file.encoding = UTF-8
+    file.separator = \
+    java.class.path = 
+    java.class.version = 65.0
+    java.home = C:\Program Files\Java\jdk-21
+    java.io.tmpdir = C:\Users\dhamo\AppData\Local\Temp\
+    java.library.path = C:\Program Files\Java\jdk-21\bin
+        C:\WINDOWS\Sun\Java\bin
+        C:\WINDOWS\system32
+        C:\WINDOWS
+        C:\Users\dhamo\AppData\Local\Android\Sdk\platform-tools
+        C:\Python313\
+        C:\Program Files\Common Files\Oracle\Java\javapath
+        C:\WINDOWS\system32
+        C:\WINDOWS
+        C:\WINDOWS\System32\Wbem
+        C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+        C:\WINDOWS\System32\OpenSSH\
+        C:\ProgramData\chocolatey\bin
+        C:\Program Files\Git\cmd
+        C:\flutter_windows_3.22.3-stable\flutter\bin
+        C:\Users\dhamo\AppData\Roaming\npm
+        C:\Program Files\Git LFS
+        C:\Program Files\MySQL\MySQL Server 8.0\bin
+        C:\Program Files\nodejs\
+        C:\Program Files\GitHub CLI\
+        C:\Users\dhamo\.local\bin
+        C:\Users\dhamo\AppData\Local\Programs\Python\Launcher\
+        C:\Users\dhamo\AppData\Local\Android\Sdk\platform-tools
+        C:\Users\dhamo\AppData\Local\Android\Sdk\tools
+        C:\Users\dhamo\AppData\Local\jdk-11.0.2\bin
+        C:\Users\dhamo\AppData\Local\Microsoft\WindowsApps
+        D:\Microsoft VS Code\bin
+        C:\Program Files\JetBrains\PyCharm Community Edition 2023.3.4\bin
+        
+        C:\Users\dhamo\Downloads\protoc-27.0-win64.zip\bin
+        C:\Program Files\Google protobuff\bin
+        C:\Users\dhamo\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe
+        C:\Users\dhamo\AppData\Roaming\npm
+        C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.4.1\bin
+        
+        C:\Users\dhamo\AppData\Local\Programs\Antigravity\bin
+        C:\Users\dhamo\AppData\Local\Programs\Antigravity IDE\bin
+        C:\Users\dhamo\AppData\Local\Programs\DockerDesktop\resources\bin
+        C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.1\bin
+        C:\Program Files\JetBrains\PyCharm 2026.2.2\bin
+        .
+    java.runtime.name = Java(TM) SE Runtime Environment
+    java.runtime.version = 21.0.1+12-LTS-29
+    java.specification.name = Java Platform API Specification
+    java.specification.vendor = Oracle Corporation
+    java.specification.version = 21
+    java.vendor = Oracle Corporation
+    java.vendor.url = https://java.oracle.com/
+    java.vendor.url.bug = https://bugreport.java.com/bugreport/
+    java.version = 21.0.1
+    java.version.date = 2023-10-17
+    java.vm.compressedOopsMode = Zero based
+    java.vm.info = mixed mode, sharing
+    java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+    java.vm.specification.name = Java Virtual Machine Specification
+    java.vm.specification.vendor = Oracle Corporation
+    java.vm.specification.version = 21
+    java.vm.vendor = Oracle Corporation
+    java.vm.version = 21.0.1+12-LTS-29
+    jdk.debug = release
+    line.separator = \r \n 
+    native.encoding = Cp1252
+    os.arch = amd64
+    os.name = Windows 11
+    os.version = 10.0
+    path.separator = ;
+    stderr.encoding = Cp1252
+    stdout.encoding = Cp1252
+    sun.arch.data.model = 64
+    sun.boot.library.path = C:\Program Files\Java\jdk-21\bin
+    sun.cpu.endian = little
+    sun.cpu.isalist = amd64
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.java.launcher = SUN_STANDARD
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    sun.os.patch.level = 
+    user.country = IN
+    user.dir = C:\Users\dhamo\IdeaProjects\HealWise\BackendApi
+    user.home = C:\Users\dhamo
+    user.language = en
+    user.name = dhamo
+    user.script = 
+    user.variant = 
+
+java version "21.0.1" 2023-10-17 LTS
+Java(TM) SE Runtime Environment (build 21.0.1+12-LTS-29)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.1+12-LTS-29, mixed mode, sharing)

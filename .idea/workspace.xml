@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e770f88c-0772-4e00-b3a4-257c3cef8581" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BackendApi/compile_err.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendApi/compile_err_21.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendApi/java_info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendApi/mvn_err.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendApi/mvn_err_utf8.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendApi/mvn_version2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendApi/run_err.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendApi/run_err2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/check_tables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/export_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/seed_db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/seed_err.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/seed_err_pg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/seed_err_pg3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/seed_pg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/api/appointments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/api/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/api/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/api/doctors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/api/hospitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/api/medicines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/api/patients.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/api/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/layout/MainLayout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/layout/Navbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/components/layout/Sidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/context/AuthContext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/pages/Appointments/Appointments.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/pages/Auth/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/pages/Auth/Register.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/pages/Dashboard/Dashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/pages/Doctors/Doctors.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/pages/Hospitals/Hospitals.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/pages/Medicines/Medicines.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/pages/Patients/Patients.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/pages/Users/Users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HealWise_Sample_Data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git_status_latest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/origin_main_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApi/src/main/java/org/example/healwise/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApi/src/main/java/org/example/healwise/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendApi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackendApi/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Dhamodhar-Dhandapani"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Dhamodhar-Dhandapani/HealWise.git",
+    "accountId": "725ac0bc-68d0-4eaa-a9b5-46aeea0fa318"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="3JZzKyEH8XN1IXfryM7uuc8D4Op" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e770f88c-0772-4e00-b3a4-257c3cef8581" name="Changes" comment="" />
+      <created>1789883333159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789883333159</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

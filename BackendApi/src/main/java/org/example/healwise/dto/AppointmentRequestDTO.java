@@ -1,9 +1,8 @@
 package org.example.healwise.dto;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
-
-import jakarta.validation.constraints.NotNull;
 
 @Getter
 @Setter

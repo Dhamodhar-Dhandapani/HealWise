@@ -33,15 +33,15 @@ public class HospitalServiceImpl implements HospitalService {
     }
 
     @Override
-    public HospitalResponceDTO getHospitalById(Long id){
-         Hospital hospital = hospitalRepository.findById(id).orElseThrow(()->
-                new RuntimeException("No Data find in this ID"+id)
+    public HospitalResponceDTO getHospitalById(Long id) {
+        Hospital hospital = hospitalRepository.findById(id).orElseThrow(() ->
+                new RuntimeException("No Data find in this ID" + id)
         );
-         return mapToResponseDTO(hospital);
+        return mapToResponseDTO(hospital);
     }
 
     @Override
-    public List<HospitalResponceDTO> getAllHospitals(){
+    public List<HospitalResponceDTO> getAllHospitals() {
 
         return hospitalRepository.findAll()
                 .stream()
@@ -50,8 +50,8 @@ public class HospitalServiceImpl implements HospitalService {
     }
 
     @Override
-    public HospitalResponceDTO updateAvailableBeds(Long id, int availableBeds ){
-        Hospital hospital = hospitalRepository.findById(id).orElseThrow(()-> new RuntimeException("hospital not found"));
+    public HospitalResponceDTO updateAvailableBeds(Long id, int availableBeds) {
+        Hospital hospital = hospitalRepository.findById(id).orElseThrow(() -> new RuntimeException("hospital not found"));
         hospital.setAvailableBeds(availableBeds);
         hospitalRepository.save(hospital);
         return mapToResponseDTO(hospital);
@@ -59,7 +59,7 @@ public class HospitalServiceImpl implements HospitalService {
 
     @Override
     public void deleteHospital(Long id) {
-        Hospital hospital = hospitalRepository.findById(id).orElseThrow(()-> new RuntimeException("hospital not found"));
+        Hospital hospital = hospitalRepository.findById(id).orElseThrow(() -> new RuntimeException("hospital not found"));
         hospitalRepository.delete(hospital);
     }
 

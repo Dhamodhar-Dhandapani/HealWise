@@ -47,7 +47,8 @@ public class SecurityConfig {
 
     @Bean
     public DaoAuthenticationProvider authenticationProvider() {
-        DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider(userDetailsService);
+        DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
+        authProvider.setUserDetailsService(userDetailsService);
         authProvider.setPasswordEncoder(passwordEncoder());
         return authProvider;
     }
@@ -71,16 +72,16 @@ public class SecurityConfig {
                                 "/v3/api-docs",
                                 "/swagger-ui/**",
                                 "/swagger-ui.html",
-                                "/swagger-ui/index.html"
-                        ).permitAll()
+                                "/swagger-ui/index.html")
+                        .permitAll()
                         // Public Auth endpoints
                         .requestMatchers("/api/auth/**").permitAll()
-                        // Public read endpoints for doctors and hospitals (convenient for booking search)
+                        // Public read endpoints for doctors and hospitals (convenient for booking
+                        // search)
                         .requestMatchers("/api/hospitals/**").permitAll()
                         .requestMatchers("/api/doctors/**").permitAll()
                         // All other endpoints require authentication
-                        .anyRequest().authenticated()
-                );
+                        .anyRequest().authenticated());
 
         http.authenticationProvider(authenticationProvider());
         http.addFilterBefore(authTokenFilter, UsernamePasswordAuthenticationFilter.class);

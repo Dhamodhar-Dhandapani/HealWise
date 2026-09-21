@@ -1,77 +1,59 @@
-import { useState, useEffect } from 'react';
-import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { useAuth } from './context/AuthContext';
+
+// Layout
+import MainLayout from './components/layout/MainLayout';
+
+// Pages
+import Login from './pages/Auth/Login';
+import Register from './pages/Auth/Register';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Appointments from './pages/Appointments/Appointments';
+import Doctors from './pages/Doctors/Doctors';
+import Hospitals from './pages/Hospitals/Hospitals';
+import Patients from './pages/Patients/Patients';
+import Medicines from './pages/Medicines/Medicines';
+import Users from './pages/Users/Users';
+
+function ProtectedRoute({ children }) {
+  const { user, loading } = useAuth();
+
+  if (loading) {
+    return <div className="flex items-center justify-center h-screen">Loading...</div>;
+  }
+
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
+
+  return children;
+}
 
 function App() {
-  const [hospitals, setHospitals] = useState([]);
-  const [doctors, setDoctors] = useState([]);
-  const [activeTab, setActiveTab] = useState('hospitals');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetchData(activeTab);
-  }, [activeTab]);
-
-  const fetchData = async (tab) => {
-    setLoading(true);
-    setError(null);
-    try {
-      const response = await fetch(`/api/${tab}`);
-      if (!response.ok) {
-        throw new Error(`Failed to fetch ${tab}. Backend might not be running or the DB is empty/failing.`);
-      }
-      const data = await response.json();
-      if (tab === 'hospitals') {
-        setHospitals(data);
-      } else {
-        setDoctors(data);
-      }
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
-    <div className="app-container">
-      <header className="header">
-        <h1>HealWise System</h1>
-        <nav>
-          <button className={activeTab === 'hospitals' ? 'active' : ''} onClick={() => setActiveTab('hospitals')}>Hospitals</button>
-          <button className={activeTab === 'doctors' ? 'active' : ''} onClick={() => setActiveTab('doctors')}>Doctors</button>
-        </nav>
-      </header>
+    <Routes>
+      {/* Public Routes */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
 
-      <main className="main-content">
-        {loading && <div className="loader">Loading {activeTab}...</div>}
-        {error && <div className="error-box">Error: {error}</div>}
+      {/* Protected Routes inside Layout */}
+      <Route path="/" element={
+        <ProtectedRoute>
+          <MainLayout />
+        </ProtectedRoute>
+      }>
+        <Route index element={<Dashboard />} />
+        <Route path="appointments" element={<Appointments />} />
+        <Route path="doctors" element={<Doctors />} />
+        <Route path="hospitals" element={<Hospitals />} />
+        <Route path="patients" element={<Patients />} />
+        <Route path="medicines" element={<Medicines />} />
+        <Route path="users" element={<Users />} />
+      </Route>
 
-        {!loading && !error && activeTab === 'hospitals' && (
-          <div className="grid">
-            {hospitals.length === 0 ? <p>No hospitals found in the database.</p> : hospitals.map(h => (
-              <div key={h.id} className="card">
-                <h2>{h.name || 'Unnamed Hospital'}</h2>
-                <p><strong>Location:</strong> {h.location}</p>
-                <p><strong>Available Beds:</strong> {h.availableBeds}</p>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {!loading && !error && activeTab === 'doctors' && (
-          <div className="grid">
-            {doctors.length === 0 ? <p>No doctors found in the database.</p> : doctors.map(d => (
-              <div key={d.id} className="card">
-                <h2>{d.name || 'Unnamed Doctor'}</h2>
-                <p><strong>Specialization:</strong> {d.specialization}</p>
-                <p><strong>Hospital ID:</strong> {d.hospitalId}</p>
-              </div>
-            ))}
-          </div>
-        )}
-      </main>
-    </div>
+      {/* Fallback */}
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   );
 }
 

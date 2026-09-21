@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-public interface DoctorSlotRepository extends JpaRepository<DoctorSlot,Long> {
+public interface DoctorSlotRepository extends JpaRepository<DoctorSlot, Long> {
     List<DoctorSlot> findByDoctorIdAndDateAndIsBookedFalse(Long doctorId, LocalDate date);
 
     // Returns true if any slot on this date intersects with the requested start/end times

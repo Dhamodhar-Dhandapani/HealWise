@@ -1,7 +1,10 @@
 package org.example.healwise.service;
 
 import org.example.healwise.entity.*;
-import org.example.healwise.repository.*;
+import org.example.healwise.repository.BedAllotmentRepository;
+import org.example.healwise.repository.BedInventoryRepository;
+import org.example.healwise.repository.HospitalRepository;
+import org.example.healwise.repository.PatientRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

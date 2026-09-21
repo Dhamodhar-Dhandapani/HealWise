@@ -1,0 +1,26 @@
+Clearing old data...
+Seeding Hospitals...
+Seeding Users & Doctors & Patients...
+Seeding Doctor Slots & Appointments...
+error: column "booked" of relation "doctor_slots" does not exist
+    at C:\Users\dhamo\IdeaProjects\HealWise\FrontEnd\node_modules\pg\lib\client.js:694:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async seed (file:///C:/Users/dhamo/IdeaProjects/HealWise/FrontEnd/seed_pg.js:52:13) {
+  length: 131,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '66',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_target.c',
+  line: '1073',
+  routine: 'checkInsertTargets'
+}

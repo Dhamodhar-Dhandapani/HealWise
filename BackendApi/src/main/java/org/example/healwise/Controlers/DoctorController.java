@@ -1,5 +1,6 @@
 package org.example.healwise.Controlers;
 
+import jakarta.validation.Valid;
 import org.example.healwise.dto.DoctorRequestDTO;
 import org.example.healwise.dto.DoctorSlotRequestDTO;
 import org.example.healwise.entity.Doctor;
@@ -10,7 +11,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import jakarta.validation.Valid;
 import java.time.LocalDate;
 import java.util.List;
 
